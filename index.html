@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Monedas</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Conversor de Pesos Chilenos</h1>
+
+
+        <label for="pesos">Pesos CLP</label>
+        <input type="number" id="pesos" placeholder="Ingrese monto en CLP">
+
+
+
+        <label for="moneda">Moneda</label>
+        <select id="moneda">
+            <option value="dolar">Dólar</option>
+            <option value="euro">Euro</option>
+            <option value="uf">UF</option>
+        </select>
+
+
+
+        <button id="convertir">Buscar</button>
+
+
+
+        <div>
+            <h2>Resultado</h2>
+            <p id="resultado"></p>
+            <p id="error" style="color:red;"></p>
+        </div>
+
+    </div>
+    <div class="grafico">
+        <canvas id="grafico"></canvas>
+    </div>
+
+
+
+    <script src="./src/scripts/script.js"></script>
+
+</body>
+
+</html>
